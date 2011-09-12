@@ -59,7 +59,7 @@ abc.prototype = {
     theTarget = theTarget.innerText;
 
     if (document.getElementById(theTarget)) {
-      myScroll.scrollTo(0, -document.getElementById(theTarget).offsetTop, 0);
+      myScroll.scrollTo(0, -document.getElementById(theTarget).offsetTop, '0s');
     }
     this.element.addEventListener('touchmove', this, false);
     this.element.addEventListener('touchend', this, false);
@@ -92,7 +92,7 @@ abc.prototype = {
         theTarget = myScroll.maxScroll;
       }
 
-      myScroll.scrollTo(0, theTarget, 0);
+      myScroll.scrollTo(0, theTarget, '0s');
     }
 
     return false;
@@ -101,7 +101,7 @@ abc.prototype = {
 
 function loaded() {
   myScroll = new iScroll('wrapper', {hScrollbar: false, vScrollbar: false});
-  alphaIndex = new abc(document.getElementById('abc'));
+  new abc(document.getElementById('abc'));
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -215,12 +215,11 @@ body {
   font-size: 11px;
   height: 364px;
   line-height: 1;
-  position: absolute;
+  position: absolute; z-index: 1000;
   right: 4px;
   text-align: center;
   top: 48px;
   width: 28px;
-  z-index: 1000;
   -webkit-border-radius: 14px;
 }
 
