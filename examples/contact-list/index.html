@@ -59,11 +59,7 @@ abc.prototype = {
     theTarget = theTarget.innerText;
 
     if (document.getElementById(theTarget)) {
-<<<<<<< HEAD
-      myScroll.scrollTo(0, -document.getElementById(theTarget).offsetTop, '0s');
-=======
       myScroll.scrollTo(0, -document.getElementById(theTarget).offsetTop, 0);
->>>>>>> b7c535d9627207303902562008543e2c2b6460a8
     }
     this.element.addEventListener('touchmove', this, false);
     this.element.addEventListener('touchend', this, false);
@@ -96,11 +92,7 @@ abc.prototype = {
         theTarget = myScroll.maxScroll;
       }
 
-<<<<<<< HEAD
-      myScroll.scrollTo(0, theTarget, '0s');
-=======
       myScroll.scrollTo(0, theTarget, 0);
->>>>>>> b7c535d9627207303902562008543e2c2b6460a8
     }
 
     return false;
@@ -109,11 +101,7 @@ abc.prototype = {
 
 function loaded() {
   myScroll = new iScroll('wrapper', {hScrollbar: false, vScrollbar: false});
-<<<<<<< HEAD
-  new abc(document.getElementById('abc'));
-=======
   alphaIndex = new abc(document.getElementById('abc'));
->>>>>>> b7c535d9627207303902562008543e2c2b6460a8
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -227,19 +215,12 @@ body {
   font-size: 11px;
   height: 364px;
   line-height: 1;
-<<<<<<< HEAD
-  position: absolute; z-index: 1000;
-=======
   position: absolute;
->>>>>>> b7c535d9627207303902562008543e2c2b6460a8
   right: 4px;
   text-align: center;
   top: 48px;
   width: 28px;
-<<<<<<< HEAD
-=======
   z-index: 1000;
->>>>>>> b7c535d9627207303902562008543e2c2b6460a8
   -webkit-border-radius: 14px;
 }
 
