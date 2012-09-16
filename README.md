@@ -3,6 +3,12 @@ iScroll v4.2.2 - 2012-08-25
 
 The overflow:scroll for mobile webkit. Project started because webkit for iPhone does not provide a native way to scroll content inside a fixed size (width/height) div. So basically it was impossible to have a fixed header/footer and a scrolling central area. Until now. Read more at [cubiq.org](http://cubiq.org).
 
+## How to make an iScroll distribution
+1. Download [YUI Compressor 2.4.7](http://yui.zenfs.com/releases/yuicompressor/yuicompressor-2.4.7.zip).
+2. Copy ```/yuicompressor-2-1.4.7/build/yuicompressor-2.4.7.jar``` to ```/usr/local/bin```
+2. In the Terminal.app CD to ```/iScroll/bin```.
+3. Execute make-dist in the Terminal.
+
 ## Ender support
 Using [Ender](http://ender.no.de), add it to your existing build
 
