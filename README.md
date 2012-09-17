@@ -5,7 +5,7 @@ The overflow:scroll for mobile webkit. Project started because webkit for iPhone
 
 ## How to make an iScroll distribution
 1. Download [YUI Compressor 2.4.7](http://yui.zenfs.com/releases/yuicompressor/yuicompressor-2.4.7.zip).
-2. Copy ```/yuicompressor-2-1.4.7/build/yuicompressor-2.4.7.jar``` to ```/usr/local/bin```
+2. Copy ```/yuicompressor-2.4.7/build/yuicompressor-2.4.7.jar``` to ```/usr/local/bin```
 2. In the Terminal.app CD to ```/iScroll/bin```.
 3. Execute make-dist in the Terminal.
 
